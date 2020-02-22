@@ -1,11 +1,11 @@
 ﻿module Folder
 
-    type public Folder(name:string, path:string, parent: Folder option) = 
+    type public Folder(name:string, path:string, parent: FolderType option) = 
         inherit Container.ContainerBase(name, path)    
        
         member val Parent = parent with get
         member val ChildFiles :File.File list = [] with get
-        member val ChildFolders :Folder list = [] with get
+        member val ChildFolders :FolderType list = [] with get
 
         override this.GetSizeInBytes() = 0
         

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="TestFolder.fs" />
     <Compile Include="TestContainer.fs" />
     <Compile Include="TestFile.fs" />
     <Compile Include="Folder - Copy.fs" />

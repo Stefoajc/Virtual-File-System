@@ -7,7 +7,6 @@ open HeyRed.Mime
         member val Data = data with get
         member val MimeType = MimeTypesMap.GetMimeType(name) with get
 
-
         override this.GetSizeInBytes() = this.Data.Length
 
         override this.ToString() =
