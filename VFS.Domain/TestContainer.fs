@@ -1,4 +1,4 @@
-﻿module Container
+﻿module TestContainer
 
 open System
 
@@ -15,3 +15,4 @@ open System
 
         
         abstract member  GetSizeInBytes : unit -> int
+

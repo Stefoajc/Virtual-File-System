@@ -1,10 +1,9 @@
-﻿module File
+﻿module TestFile
 
 open HeyRed.Mime
 
-    [<ClassAttribute>]
     type public File(name:string, path:string, data: byte array) = 
-        inherit Container.ContainerBase(name, path)        
+        inherit TestContainer.ContainerBase(name, path)        
         member val Data = data with get
         member val MimeType = MimeTypesMap.GetMimeType(name) with get
 
