@@ -1,22 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <Compile Include="TestFolder.fs" />
-    <Compile Include="TestContainer.fs" />
-    <Compile Include="TestFile.fs" />
-    <Compile Include="Folder - Copy.fs" />
-    <Compile Include="FileSystemNavigator.fs" />
+    <Compile Include="Common\WrappedString.fs" />
+    <Compile Include="Common\MaybeBuilder.fs" />
     <Compile Include="Container.fs" />
     <Compile Include="File.fs" />
     <Compile Include="Folder.fs" />
+    <Compile Include="FileNavigator.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="MimeTypesMap" Version="1.0.8" />
   </ItemGroup>
-
 </Project>
